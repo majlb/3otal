@@ -30,4 +30,5 @@ $lang_arr['email']='Email';
 $lang_arr['phoneNumber']='Phone number';
 $lang_arr['subject']='Subject';
 $lang_arr['content']='Content';
+$lang_arr['thankYou']='Thank you';
 ?>

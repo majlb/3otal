@@ -30,4 +30,5 @@ $lang_arr['email']='البريد الإلكتروني';
 $lang_arr['phoneNumber']='رقم الهاتف';
 $lang_arr['subject']='الموضوع';
 $lang_arr['content']='المضمون';
+$lang_arr['thankYou']='شكراً لك';
 ?>

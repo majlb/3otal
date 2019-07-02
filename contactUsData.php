@@ -13,6 +13,6 @@ $seconds =  date("s");
 $fileName = "contactus/file".$year.$month.$day.$hour.$seconds.".txt";
 $fullContent = $name."*".$email."*".$phoneNumber."*".$subject."*".$content;
 echo file_put_contents($fileName,$fullContent);
-echo "done";
+header('location: ThankYou.php');
 
 ?>
