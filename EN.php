@@ -24,5 +24,10 @@ $lang_arr['hoverCountry']='You can pass over country map to get info';
 $lang_arr['noIncidents'] ='No incidents';
 $lang_arr['day'] ='Day';
 $lang_arr['month'] ='Month';
-$lang_arr['month'] ='Month';
+$lang_arr['pressOnFlagForEvent'] ='Press on flag to get the events of the country';
+$lang_arr['name']='Name';
+$lang_arr['email']='Email';
+$lang_arr['phoneNumber']='Phone number';
+$lang_arr['subject']='Subject';
+$lang_arr['content']='Content';
 ?>

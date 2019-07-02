@@ -9,7 +9,7 @@
 
 					<div class="container">
 					<br>
-					<center><h2><b>اضغط على العلم لظهور مناسبات  الدولة <b><h2> </center>
+					<center><h2><b><?php echo $lang_arr['pressOnFlagForEvent']?><b><h2> </center>
 					</br>
                    <div id="countriesDiv"></div>
 				<?php

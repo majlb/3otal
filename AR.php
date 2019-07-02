@@ -24,4 +24,10 @@ $lang_arr['hoverCountry']='يمكنك المرور على خريطة البلد 
 $lang_arr['noIncidents'] ='لا أحداث';
 $lang_arr['day'] ='يوم';
 $lang_arr['month'] ='شهر';
+$lang_arr['pressOnFlagForEvent'] ='اضغط على العلم لظهور مناسبات  الدولة';
+$lang_arr['name']='الاسم';
+$lang_arr['email']='البريد الإلكتروني';
+$lang_arr['phoneNumber']='رقم الهاتف';
+$lang_arr['subject']='الموضوع';
+$lang_arr['content']='المضمون';
 ?>

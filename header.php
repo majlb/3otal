@@ -34,7 +34,7 @@
 
 <li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168"><a href="http://www.3otal.com/weekend.php?lang=<?php echo $lang?>"><?php echo $lang_arr['weekEnd']?></a></li>
 
-<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="http://www.3otal.com/contact/"><?php echo $lang_arr['contactUs']?></a></li>
+<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="http://www.3otal.com/contactUs.php?lang=<?php echo $lang?>"><?php echo $lang_arr['contactUs']?></a></li>
 
 <li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a href="http://www.3otal.com/about/"><?php echo $lang_arr['aboutUs']?></a></li>
 
