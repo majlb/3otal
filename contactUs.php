@@ -61,18 +61,26 @@ $imageDim = "";
 		</aside>
 		<aside id="calendar-3" class="widget widget_calendar">
 		<div id="calendar_wrap" class="calendar_wrap">
+		
+		<form action="contactUsData.php" method="post">
 	      <table>
-		   <tr><td><?php echo $lang_arr['name']?></td><td><input type='text' id='nameId'/></td></tr>
-		   <tr><td><?php echo $lang_arr['email']?></td><td><input type='text' id='emailId'/></td></tr>
-		   <tr><td><?php echo $lang_arr['phoneNumber']?></td><td><input type='text' id='phoneNumberId'/></td></tr>
-		   <tr><td><?php echo $lang_arr['subject']?></td><td><input type='text' id='subjectId'/></td></tr>
-		   <tr><td><?php echo $lang_arr['content']?></td><td><input type='text' id='contentId'/></td></tr>
-		   <tr><td></td><td><button  value='....'/></td></tr>
+		   <tr><td><?php echo $lang_arr['name']?></td><td><input type='text' id='nameId' name='nameId'/></td></tr>
+		   <tr><td><?php echo $lang_arr['email']?></td><td><input type='text' id='emailId'  name='emailId'/></td></tr>
+		   <tr><td><?php echo $lang_arr['phoneNumber']?></td><td><input type='text' id='phoneNumberId'   name='phoneNumberId'/></td></tr>
+		   <tr><td><?php echo $lang_arr['subject']?></td><td><input type='text' id='subjectId'  name='subjectId'/></td></tr>
+		   <tr><td><?php echo $lang_arr['content']?></td><td><textArea  id='contentId' name='contentId'></textArea></td></tr>
+		   <tr><td></td><td><input type='submit'  value='----' /></td></tr>
 		  </table>
+		  </form>
 	     </div>
 		 </aside>
 	</div>
 
 </div>
 </body>
+<script>
+function makeContactUs(){
+ alert(1);
+}
+</script>
 </html>
