@@ -31,4 +31,5 @@ $lang_arr['phoneNumber']='Phone number';
 $lang_arr['subject']='Subject';
 $lang_arr['content']='Content';
 $lang_arr['thankYou']='Thank you';
+$lang_arr['showCities']='Show cities';
 ?>

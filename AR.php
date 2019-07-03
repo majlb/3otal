@@ -31,4 +31,5 @@ $lang_arr['phoneNumber']='رقم الهاتف';
 $lang_arr['subject']='الموضوع';
 $lang_arr['content']='المضمون';
 $lang_arr['thankYou']='شكراً لك';
+$lang_arr['showCities']='مدن';
 ?>
