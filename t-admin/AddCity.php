@@ -9,7 +9,7 @@
  $tbl=0;
  $dsplay="none";
  
-include ('connection.php');
+include ('../t-php/t-db/connection.php');
 //include("lang/".$lang.".php");
 $connection = new createConnection(); //i created a new object
 $connection->connectToDatabase(); // connected to the database

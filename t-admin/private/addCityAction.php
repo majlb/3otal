@@ -1,7 +1,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <?php 
 header('Content-Type: text/html; charset=utf-8');
-include ('../connection.php');
+include ('../../t-php/t-db/connection.php');
 $connection = new createConnection(); 
 $connection->connectToDatabase();
 $con = $connection->selectDatabase();
@@ -19,7 +19,7 @@ $country=$_POST['country'];
 
 
 $theEnName = $_POST['EnName'];
-$target = "../img/city/";
+$target = "../../img/city/";
 $pcName = str_replace(" ", "_", $theEnName);
 if(strlen($pcName)>40){
 	$pcName = substr($pcName,0,40);
