@@ -16,7 +16,7 @@
 				<?php
 				//mfi
 				error_reporting(E_ERROR);
-				$foundCountry = false;
+				$foundCountry = "0";
 				$mainCountryId = 1;				
 			    $queryStr = "select c.id , m.text,c.abv from Countries as c , multi_lang as m where c.id_name = m.id_multi and m.lang='".$lang."'"; 
                 $resultCntStr="SELECT count(1)  from (".$queryStr.") as mm";
@@ -46,7 +46,7 @@
 				echo "<div class='4u 12u(medium)'>";
 				if($countryCodeVisitor==$row['abv']){	
 					echo "<div id='countryDiv".$row['id']."' style='display:block'>";
-					$foundCountry=true;
+					$foundCountry="1";
 					$mainCountryId=$row['id'];
                 } else {
 					echo "<div id='countryDiv".$row['id']."' style='display:none'>";
@@ -128,10 +128,11 @@
 			</div>
 <script>
 	var countryId =1;
-	<?php if(!$foundCountry){ ?>
+	<?php if($foundCountry=="0"){ ?>
 		document.getElementById('countryDiv'+countryId).style.display='block';
 	<?php } else {?>
-	 countryId ="<?php echo $mainCountryId?>"
+	 countryId ="<?php echo $mainCountryId?>";
+	 document.getElementById('countryDiv'+countryId).style.display='block';
 	<?php  } ?>
 
  var xmlhttp1 = new XMLHttpRequest();

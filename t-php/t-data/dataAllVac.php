@@ -23,8 +23,9 @@
 <?php
 //mfi
 error_reporting(E_ERROR);
-$foundCountry = false;
+$foundCountry = "0";
 $imgSrc = './img/';
+$mainCountryId = 1;	
 $getCountriesUrl = './t-php/t-data/';
 if($isMain=="0"){
     $getCountriesUrl = '../t-data/';
@@ -90,7 +91,7 @@ if($isMain=="0"){
 					"31" => "٣١"
                         );
                 		 
-			    $queryStr = "select c.id , m.text from Countries as c , multi_lang as m where c.id_name = m.id_multi and m.lang='".$lang."'"; 
+			    $queryStr = "select c.id , m.text,c.abv from Countries as c , multi_lang as m where c.id_name = m.id_multi and m.lang='".$lang."'"; 
 			
      
 
@@ -128,9 +129,10 @@ if($isMain=="0"){
                 echo "<div class='row'>";
             }
         	echo "<div class='4u 12u(medium)'>";
-			if($countryCodeVisitor==$row['abv']){
+			if($countryCodeVisitor == $row['abv']){
 				echo "<div id='countryDiv".$row['id']."' style='display:block'>";
-				$foundCountry=true;
+				$foundCountry="1";
+				$mainCountryId=$row['id'];
 			}else {
 			   echo "<div id='countryDiv".$row['id']."' style='display:none'>";
 			}
@@ -237,10 +239,15 @@ $nameOfDay = date('D', strtotime($date));
 			</div>
 
 <script>
-<?php if(!$foundCountry){ ?>
-	var countryId =1;
-	document.getElementById('countryDiv'+countryId).style.display='block';
-<?php } ?>
+
+    var countryId =1;
+	<?php if($foundCountry=="0"){ ?>
+		document.getElementById('countryDiv'+countryId).style.display='block';
+	<?php } else {?>
+	    countryId ="<?php echo $mainCountryId?>";
+		document.getElementById('countryDiv'+countryId).style.display='block';
+	<?php  } ?>
+
 
  var xmlhttp1 = new XMLHttpRequest();
             xmlhttp1.onreadystatechange = function() {
