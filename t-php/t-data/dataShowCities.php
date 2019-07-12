@@ -4,7 +4,7 @@
 
 	   
 <!-- Features -->
-  <!-- script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqgXzv4rxYIVCEUU4r_Dgxx-c2LTnHJwY&callback=initMap" type="text/javascript" language="AR"></script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqgXzv4rxYIVCEUU4r_Dgxx-c2LTnHJwY&callback=initMap" type="text/javascript" language="AR"></script>
 				<div id="features-wrapper">
 
 
@@ -169,10 +169,10 @@ document.getElementById('countryDiv'+countryId).style.display='block';
    
 ///MAPS
 
-var   zMapCanvas = "<?php echo $zMapCanvas;?>";
+/*var   zMapCanvas = "<?php echo $zMapCanvas;?>";
 var   zMapAtt = "<?php echo $zMapAtt;?>";
 var zMapCanvasArr = zMapCanvas.split("*");
-var zMapAttArr= zMapAtt.split("*");
+var zMapAttArr= zMapAtt.split("*");*/
 var map;
 var markers = [];
 /*for(var i=0;i<zMapCanvasArr.length;i++){
