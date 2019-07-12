@@ -16,9 +16,9 @@
 				<?php
 				//mfi
 				error_reporting(E_ERROR);
-				
-				
-			    $queryStr = "select c.id , m.text from Countries as c , multi_lang as m where c.id_name = m.id_multi and m.lang='".$lang."'"; 
+				$foundCountry = false;
+				$mainCountryId = 1;				
+			    $queryStr = "select c.id , m.text,c.abv from Countries as c , multi_lang as m where c.id_name = m.id_multi and m.lang='".$lang."'"; 
                 $resultCntStr="SELECT count(1)  from (".$queryStr.") as mm";
                 $zMapCanvas = "";
 				$zMapAtt = "";
@@ -44,7 +44,13 @@
 				echo "<div class='row'>";
 				}
 				echo "<div class='4u 12u(medium)'>";
-				echo "<div id='countryDiv".$row['id']."' style='display:none'>";
+				if($countryCodeVisitor==$row['abv']){	
+					echo "<div id='countryDiv".$row['id']."' style='display:block'>";
+					$foundCountry=true;
+					$mainCountryId=$row['id'];
+                } else {
+					echo "<div id='countryDiv".$row['id']."' style='display:none'>";
+				}
 				echo "<section class='box feature'>";
 			
 				echo "<div class='inner'>";
@@ -120,10 +126,13 @@
 			<!-- Footer -->
 
 			</div>
-
 <script>
-var countryId =1;
-document.getElementById('countryDiv'+countryId).style.display='block';
+	var countryId =1;
+	<?php if(!$foundCountry){ ?>
+		document.getElementById('countryDiv'+countryId).style.display='block';
+	<?php } else {?>
+	 countryId ="<?php echo $mainCountryId?>"
+	<?php  } ?>
 
  var xmlhttp1 = new XMLHttpRequest();
             xmlhttp1.onreadystatechange = function() {
