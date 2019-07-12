@@ -1,7 +1,6 @@
 <?php
 include ('../t-data/IpInfo.php');
 $countryCodeVisitor= ip_info("Visitor", "Country Code");
-echo  $countryCodeVisitor;
 ?>
 
 <header id="masthead" class="site-header" role="banner">
