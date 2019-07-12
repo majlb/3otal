@@ -175,7 +175,7 @@ body {font-family: Arial;}
          
          data.addRow([{v:myObj[x].abv,f:myObj[x].name},mod,vacReason]);
          data0.addRow([{v:myObj[x].abv,f:myObj[x].name},mod,vacReason]);
-         
+      
          } else if(myObj[x].east ==0){
              var mod =1;
          var vacReason = "";
@@ -198,6 +198,11 @@ body {font-family: Arial;}
          }    
          data1.addRow([{v:myObj[x].abv,f:myObj[x].name},mod,vacReason]);
          data0.addRow([{v:myObj[x].abv,f:myObj[x].name},mod,vacReason]);
+		 
+		 if(myObj[x].abv =="MA"){
+			 data1.addRow([{v:"EH",f:myObj[x].name},mod,vacReason]);
+             data0.addRow([{v:"EH",f:myObj[x].name},mod,vacReason]);
+         }
           
          }
       }
