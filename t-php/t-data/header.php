@@ -1,4 +1,10 @@
-	<header id="masthead" class="site-header" role="banner">
+<?php
+include ('../t-data/IpInfo.php');
+$countryCodeVisitor= ip_info("Visitor", "Country Code");
+echo  $countryCodeVisitor;
+?>
+
+<header id="masthead" class="site-header" role="banner">
 <style>
 .button {
   background-color: #4CAF50; /* Green */
@@ -14,7 +20,7 @@
 }
 </style>
 			
-			<div class="site-header-wrapper">
+<div class="site-header-wrapper">
 <div class="site-title-wrapper">
 
 <div> 

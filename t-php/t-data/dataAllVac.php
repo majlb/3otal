@@ -23,7 +23,7 @@
 <?php
 //mfi
 error_reporting(E_ERROR);
-	
+$foundCountry = false;
 $imgSrc = './img/';
 $getCountriesUrl = './t-php/t-data/';
 if($isMain=="0"){
@@ -128,7 +128,12 @@ if($isMain=="0"){
                 echo "<div class='row'>";
             }
         	echo "<div class='4u 12u(medium)'>";
-			echo "<div id='countryDiv".$row['id']."' style='display:none'>";
+			if($countryCodeVisitor==$row['abv']){
+				echo "<div id='countryDiv".$row['id']."' style='display:block'>";
+				$foundCountry=true;
+			}else {
+			   echo "<div id='countryDiv".$row['id']."' style='display:none'>";
+			}
 			echo "<section class='box feature'>";
 		
 			echo "<div class='inner'>";
@@ -140,12 +145,12 @@ if($isMain=="0"){
 			foreach ($years as $year) {
 			    //echo '<br>mfi:['.$year.','.$row['id'].']';
 			    //echo '<br>mfi:ok';
-				echo "<input type='button' class='tablinks' onclick=\"openYear(event, '".$year."-".$row['id']."')\" value='".$year."'></input>";
+				echo "<input type='button' class='tablinks1' onclick=\"openYear(event, '".$year."-".$row['id']."')\" value='".$year."'></input>";
 			}
 			echo "</div>";
 				
 			foreach ($years as $year) {
-				echo " <div id='".$year."-".$row['id']."' class='tabcontent'>";
+				echo " <div id='".$year."-".$row['id']."' class='tabcontent1'>";
 				
 			    $queryStr2 = "select tbl.event_day,tbl.event_month , tbl.text,tbl.minDays,tbl.maxDays from(select e.event_day,e.event_month , m.text,ec.nb_days_min minDays,ec.nb_days_max maxDays from event as e , event_countries as ec, multi_lang as m ";
 			    $queryStr2 = $queryStr2." where e.id = ec.id_event and ec.id_country=".$row['id']." and e.id_name = m.id_multi and m.lang='".$lang."' and (e.event_year='' or e.event_year=".$year.")"; 
@@ -232,8 +237,10 @@ $nameOfDay = date('D', strtotime($date));
 			</div>
 
 <script>
-var countryId =1;
-document.getElementById('countryDiv'+countryId).style.display='block';
+<?php if(!$foundCountry){ ?>
+	var countryId =1;
+	document.getElementById('countryDiv'+countryId).style.display='block';
+<?php } ?>
 
  var xmlhttp1 = new XMLHttpRequest();
             xmlhttp1.onreadystatechange = function() {
@@ -286,13 +293,13 @@ document.getElementById('countryDiv'+countryId).style.display='block';
   var i, tabcontent, tablinks;
 
   // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
+  tabcontent = document.getElementsByClassName("tabcontent1");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
   // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks = document.getElementsByClassName("tablinks1");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }

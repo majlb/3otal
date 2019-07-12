@@ -103,6 +103,13 @@ img.emoji {
   border: 1px solid #ccc;
   border-top: none;
 }
+
+.tabcontent1 {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
 	</style>
 
 <style id="uptown-style-inline-css" type="text/css">
