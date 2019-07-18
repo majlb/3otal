@@ -1,6 +1,6 @@
 /*
 mfi: note about Git
-
+(mfi : 3otal path on work pc : H:\3otal\git-3otal\3otal)
 small tutorial about git commands
 
 */
@@ -55,3 +55,4 @@ git pull try to automatically make merge
 IMPORTANT COMMANDS: ( equal to sync and commit in CVS ) 
 git pull    ( to get all new ) 
 git add , git commit , git push  ( to commit changes to github repo )
+git pull ( ALWAYS to check all is up to date )
