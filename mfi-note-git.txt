@@ -1,3 +1,4 @@
 /*
 mfi: note about Git
+From Github
 */
