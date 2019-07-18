@@ -1,4 +1,4 @@
 /*
 mfi: note about Git
-From Github
+From Github -2
 */
