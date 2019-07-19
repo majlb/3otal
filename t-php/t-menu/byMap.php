@@ -3,6 +3,8 @@
 
 	
 <?php
+$isMain = "0";
+
 //mfi
 include "../../t-include/common.php";
 include "../../t-include/common-style.php";
@@ -26,7 +28,7 @@ if($lang=="AR"){
 
 
 
-$isMain = "0";
+
 $imageDim = "";
    
         

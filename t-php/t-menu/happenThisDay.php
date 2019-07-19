@@ -3,6 +3,7 @@
 
 	
 <?php
+$isMain = "0";
 //mfi
 include "../../t-include/common.php";
 include "../../t-include/common-style.php";
@@ -39,7 +40,7 @@ if($month=="" && $day==""){
 
 
 
-$isMain = "0";
+
 $imageDim = "";
    
         

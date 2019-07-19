@@ -4,7 +4,12 @@
 //to set error report ( hide warning when working locally )
 error_reporting(E_WARNING);
 
-
+$cssFilesUrl = './t-css/';
+$imgBackgroundUrl = './img/';
+if($isMain=="0"){
+    $cssFilesUrl = '../../t-css/';
+    $imgBackgroundUrl = '../../img/';
+}
 
 ?>
 
@@ -12,37 +17,49 @@ error_reporting(E_WARNING);
 
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!-- <script type="text/javascript" src="../t-css/wp-emoji-release.min.js.download"  defer=""></script>
-	<script type="text/javascript" src="../t-css/jquery.js.download"></script>
-    <script type="text/javascript" src="../t-css/jquery-migrate.min.js.download"></script>
-    <script type="text/javascript" src="../t-css/navigation.min.js.download"></script>
-	<script type="text/javascript" src="../t-css/skip-link-focus-fix.min.js.download"></script>
-	<script type="text/javascript" src="../t-css/wp-embed.min.js.download"></script>
-	<script type="text/javascript" src="../wpinfo/156-layout.js.download"></script> -->
+        <script type="text/javascript" src="<?php echo $cssFilesUrl?>wp-emoji-release.min.js.download"  defer=""></script>
+	<script type="text/javascript" src="<?php echo $cssFilesUrl?>jquery.js.download"></script>
+    <script type="text/javascript" src="<?php echo $cssFilesUrl?>jquery-migrate.min.js.download"></script>
+    <script type="text/javascript" src="<?php echo $cssFilesUrl?>navigation.min.js.download"></script>
+	<script type="text/javascript" src="<?php echo $cssFilesUrl?>skip-link-focus-fix.min.js.download"></script>
+	<script type="text/javascript" src="<?php echo $cssFilesUrl?>wp-embed.min.js.download"></script>
+	<script type="text/javascript" src="<?php echo $cssFilesUrl?>156-layout.js.download"></script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   
-  	<link rel="stylesheet" 											href="../../t-css/style.css">
-	<link rel="stylesheet" id="wp-block-library-css" 				href="../../t-css/style.min.css" type="text/css" media="all">
-	<link rel="stylesheet" id="wp-block-library-theme-css" 			href="../../t-css/theme.min.css" type="text/css" media="all">
-	<link rel="stylesheet" id="wp-components-css" 					href="../../t-css/style.min(1).css" type="text/css" media="all">
-	<link rel="stylesheet" id="wp-editor-font-css" 					href="../../t-css/css" type="text/css" media="all">
-	<link rel="stylesheet" id="wp-block-editor-css" 				href="../../t-css/style.min(2).css" type="text/css" media="all">
-	<link rel="stylesheet" id="wp-nux-css" 							href="../../t-css/style.min(3).css" type="text/css" media="all">
-	<link rel="stylesheet" id="wp-editor-css" 						href="../../t-css/style.min(4).css" type="text/css" media="all">
-	<link rel="stylesheet" id="wp-edit-blocks-css" 					href="../../t-css/editor.min.css" type="text/css" media="all">
-	<link rel="stylesheet" id="contact-widgets-contact-block-css" 	href="../../t-css/contact-block.min.css" type="text/css" media="all">
-	<link rel="stylesheet" id="font-awesome-css" 					href="../../t-css/font-awesome.min.css" type="text/css" media="all">
-	<link rel="stylesheet" id="contact-widgets-social-block-css" 	href="../../t-css/social-block.min.css" type="text/css" media="all">
-	<link rel="stylesheet" id="fl-builder-layout-156-css" 			href="../../t-css/156-layout.css" type="text/css" media="all">
-	<link rel="stylesheet" id="uptown-style-css" 					href="../../t-css/style.css" type="text/css" media="all">
+  	<link rel="stylesheet" 											href="<?php echo $cssFilesUrl?>style.css">
+	<link rel="stylesheet" id="wp-block-library-css" 				href="<?php echo $cssFilesUrl?>style.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="wp-block-library-theme-css" 			href="<?php echo $cssFilesUrl?>theme.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="wp-components-css" 					href="<?php echo $cssFilesUrl?>style.min(1).css" type="text/css" media="all">
+	<link rel="stylesheet" id="wp-editor-font-css" 					href="<?php echo $cssFilesUrl?>css" type="text/css" media="all">
+	<link rel="stylesheet" id="wp-block-editor-css" 				href="<?php echo $cssFilesUrl?>style.min(2).css" type="text/css" media="all">
+	<link rel="stylesheet" id="wp-nux-css" 							href="<?php echo $cssFilesUrl?>style.min(3).css" type="text/css" media="all">
+	<link rel="stylesheet" id="wp-editor-css" 						href="<?php echo $cssFilesUrl?>style.min(4).css" type="text/css" media="all">
+	<link rel="stylesheet" id="wp-edit-blocks-css" 					href="<?php echo $cssFilesUrl?>editor.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="contact-widgets-contact-block-css" 	href="<?php echo $cssFilesUrl?>contact-block.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="font-awesome-css" 					href="<?php echo $cssFilesUrl?>font-awesome.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="contact-widgets-social-block-css" 	href="<?php echo $cssFilesUrl?>social-block.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="fl-builder-layout-156-css" 			href="<?php echo $cssFilesUrl?>156-layout.css" type="text/css" media="all">
+	<link rel="stylesheet" id="uptown-style-css" 					href="<?php echo $cssFilesUrl?>style.css" type="text/css" media="all">
+
+<link rel="stylesheet" id="wpcw-css" href="<?php echo $cssFilesUrl?>style.min(5).css" type="text/css" media="all">
+<link rel="stylesheet" id="uptown-style-fonts-css" href="<?php echo $cssFilesUrl?>css(1)" type="text/css" media="all">
+
 	
+	<link rel="stylesheet" id="wpcw-css" 							href="<?php echo $cssFilesUrl?>style.min(5).css" type="text/css" media="all">
+	<link rel="stylesheet" id="uptown-style-fonts-css" 				href="<?php echo $cssFilesUrl?>css(1)" type="text/css" media="all">
 	
 	<style id="uptown-style-inline-css" type="text/css">
 
 <style>
+.intro1 {
+  background-color: yellow;
+}
+</style>
+
+
 <style type="text/css">
 img.wp-smiley,
 img.emoji {
@@ -115,7 +132,7 @@ img.emoji {
 
 .hero{
 //background-image:url(http://www.3otal.com/wp-content/uploads/2019/03/qtq50-ZFRedU.jpeg);
-background-image: url("../../img/main-bg.jpeg");
+background-image: url("<?php echo $imgBackgroundUrl?>main-bg.jpeg");
 }
 
 .site-title a,.site-title a:visited{color:#353535;}.site-title a:hover,.site-title a:visited:hover{color:rgba(53, 53, 53, 0.8);}
@@ -139,34 +156,17 @@ body{background-color:#ffffff;}.navigation.pagination .nav-links .page-numbers.c
 .site-footer{background-color:#303d4c;}
 .site-info-wrapper{background-color:#ffffff;}.site-info-wrapper .social-menu a,.site-info-wrapper .social-menu a:visited,.site-info-wrapper .social-menu a:hover,.site-info-wrapper .social-menu a:visited:hover{color:#ffffff;}
 </style>
-<link rel="stylesheet" id="wpcw-css" href="../t-css/style.min(5).css" type="text/css" media="all">
-<link rel="stylesheet" id="uptown-style-fonts-css" href="../t-css/css(1)" type="text/css" media="all">
+
 <style id="uptown-style-fonts-inline-css" type="text/css">
 .site-title{font-family:"Playfair Display", sans-serif;}
 .main-navigation ul li a,.main-navigation ul li a:visited,button,a.button,a.fl-button,input[type="button"],input[type="reset"],input[type="submit"]{font-family:"Playfair Display", sans-serif;}
 h1,h2,h3,h4,h5,h6,label,legend,table th,dl dt,.entry-title,.widget-title{font-family:"Playfair Display", sans-serif;}
 body,p,ol li,ul li,dl dd,.fl-callout-text{font-family:"Lato", sans-serif;}
-blockquote,.entry-meta,.entry-footer,.comment-list li .comment-meta .says,.comment-list li .comment-metadata,.comment-reply-link,#respond .logged-in-as{font-family:"Lato", sans-serif;}
-</style>
 
-<link rel="https://api.w.org/" href="http://www.3otal.com/wp-json/">
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.3otal.com/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.3otal.com/wp-includes/wlwmanifest.xml"> 
-<link rel="canonical" href="http://www.3otal.com/">
-<link rel="shortlink" href="http://www.3otal.com/">
-<link rel="alternate" type="application/json+oembed" href="http://www.3otal.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.3otal.com%2F">
-<link rel="alternate" type="text/xml+oembed" href="http://www.3otal.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.3otal.com%2F&amp;format=xml">
-		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-		<style type="text/css">
-.site-title a,.site-title a:visited{color:#353535;}
-</style><style type="text/css" id="custom-background-css">
-body.custom-background { background-color: ##ffffff; }
+blockquote,.entry-meta,.entry-footer,.comment-list li .comment-meta .says,.comment-list li .comment-metadata,.comment-reply-link,#respond .logged-in-as{font-family:"Lato", sans-serif;}
+
 </style>
-<style>
-.intro1 {
-  background-color: yellow;
-}
-</style>
+  
   
 </head>  
 

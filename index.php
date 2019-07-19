@@ -3,8 +3,11 @@
 <!-- local for mfi : http://localhost:8080/3otal-v1/WebContent/ -->
 	
 <?php
+$isMain = "1";
+
 include "t-include/common.php";
-include "t-include/common-style-main.php";
+// include "t-include/common-style-main.php";
+include "t-include/common-style.php";
 
 //session_start();
 //header('Content-Type: text/html; charset=utf-8');
@@ -22,7 +25,6 @@ if($lang=="AR"){
 	$side = "left";
 }
 
-$isMain = "1";
 
 $imageDim = "";
    
