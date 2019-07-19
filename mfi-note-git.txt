@@ -1,6 +1,12 @@
 /*
 mfi: note about Git
-(mfi : 3otal path on work pc : H:\3otal\git-3otal\3otal)
+(mfi : 3otal path on work pc : 
+H:\3otal\git-3otal\3otal    OLD
+C:\wamp64\www\3otal-v3\3otal
+
+URL:
+http://localhost:8080/3otal-v3/3otal/index.php
+)
 small tutorial about git commands
 
 */
