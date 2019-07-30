@@ -188,6 +188,8 @@ $nameOfDay = date('D', strtotime($date));
                 
 				echo "<tr><td>";
 				if($row2[maxDays]>0){
+				    echo "<font color='red'><b>";
+				}else{
 				    echo "<font color='skyblue'><b>";
 				}
 				 if($lang=="AR"){
@@ -206,9 +208,8 @@ $nameOfDay = date('D', strtotime($date));
 				}else {
 				    echo " - ";
 				}
-				if($row2[maxDays]>0){
+				
 				    echo "</b></font>";
-				}
 				echo "</td></tr>";    		
 				}
 				}
@@ -243,9 +244,11 @@ $nameOfDay = date('D', strtotime($date));
     var countryId =1;
 	<?php if($foundCountry=="0"){ ?>
 		document.getElementById('countryDiv'+countryId).style.display='block';
+		  openYear("", "<?php echo $years[0]?>-"+countryId)
 	<?php } else {?>
 	    countryId ="<?php echo $mainCountryId?>";
 		document.getElementById('countryDiv'+countryId).style.display='block';
+		  openYear("", "<?php echo $years[0]?>-"+countryId);
 	<?php  } ?>
 
 

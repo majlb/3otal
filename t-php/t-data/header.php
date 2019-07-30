@@ -28,7 +28,7 @@ $countryCodeVisitor= ip_info("Visitor", "Country Code");
 </div>					
 	
 	<h1><img src="../../img/logo/logo.png" class="w3-circle w3-margin-right" style="width:80px"></h1>
-	<div class="site-description"><?php echo $lang_arr['otalArabVacations']?></div>
+	<h3><?php echo $lang_arr['otalArabVacations']?></h3>
 </div><!-- .site-title-wrapper -->
 
 <div class="main-navigation-container">

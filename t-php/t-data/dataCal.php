@@ -150,7 +150,7 @@
 
   <div id="countriesDiv"></div>  
   <div id="mainCountryDiv"></div>  
-  <div id="calendar_basic" style="width: 1000px; height: 350px;"></div>
+  <div id="calendar_basic" style="width: 1000px; height: 350px;overflow-y: scroll;"></div>
   </body>
   
   <script>
