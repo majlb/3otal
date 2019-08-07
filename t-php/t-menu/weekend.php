@@ -53,7 +53,7 @@ $imageDim = "";
 	
 
 		
-	<?php include '../t-data/header.php';?>
+	<?php include '../t-data/header.php?pageNbr=6';?>
 
 		
 <div class="hero">

@@ -67,7 +67,7 @@ $imageDim = "";
 	
 <a class="skip-link screen-reader-text" href="http://www.3otal.com">---</a>
 		
-	<?php include '../t-data/header.php';?>
+	<?php include '../t-data/header.php?pageNbr=2';?>
 
 		
 <div class="hero">
