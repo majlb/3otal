@@ -60,7 +60,7 @@ $countryCodeVisitor= ip_info("Visitor", "Country Code");
 		
 		<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="contactUs.php?lang=<?php echo $lang?>"><?php echo $lang_arr['contactUs']?></a></li>
 		
-		<li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a href="about/"><?php echo $lang_arr['aboutUs']?></a></li>
+		<li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a href="aboutUs.php?lang=<?php echo $lang?>"><?php echo $lang_arr['aboutUs']?></a></li>
 	</ul>
 </div>
 </nav><!-- #site-navigation -->

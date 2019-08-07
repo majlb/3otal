@@ -228,54 +228,10 @@ $years = [2019,2020,2021,2022,2023];
 		</div><!-- #content -->
 
 		
-		<footer id="colophon" class="site-footer">
 
-			<div class="site-footer-inner">
-
-					<div class="footer-widget-area columns-2">
-
-	
-		<div class="footer-widget">
-
-			
-		</div>
-
-	
-		<div class="footer-widget">
-
-			<aside id="search-4" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://www.3otal.com/">
-				<label>
-					<span class="screen-reader-text">Search for:</span>
-					<input type="search" class="search-field" placeholder="Search …" value="" name="s">
-				</label>
-				<input type="submit" class="search-submit" value="Search">
-			</form></aside>
-		</div>
-
-	
-	</div>
-	
-			</div><!-- .site-footer-inner -->
-
-		</footer><!-- #colophon -->
 
 		
-<div class="site-info-wrapper">
 
-	<div class="site-info">
-
-		<div class="site-info-inner">
-
-			
-<div class="site-info-text">
-
-</div>
-
-		</div><!-- .site-info-inner -->
-
-	</div><!-- .site-info -->
-
-</div><!-- .site-info-wrapper -->
 
 	</div><!-- #page -->
 

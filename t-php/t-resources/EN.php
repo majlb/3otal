@@ -35,5 +35,6 @@ $lang_arr['thankYou']='Thank you';
 $lang_arr['showCities']='Cities for holidays';
  $lang_arr['pressOnFlagForCities']='Press on flag to get the cities of the country';
  $lang_arr['showMap']='Show Map';
-  $lang_arr['hideMap']='Hide Map';
+ $lang_arr['hideMap']='Hide Map';
+ $lang_arr['aboutUsDetails']='MMM';
 ?>

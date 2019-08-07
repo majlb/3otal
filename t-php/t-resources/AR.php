@@ -35,4 +35,5 @@ $lang_arr['showCities']='مدن لقضاء العطل';
 $lang_arr['pressOnFlagForCities']='اضغط على العلم لظهور مدن الدولة';
 $lang_arr['showMap']='إظهار الخريطة';
 $lang_arr['hideMap']='إخفاء الخريطة';
+$lang_arr['aboutUsDetails']='MMM';
 ?>
