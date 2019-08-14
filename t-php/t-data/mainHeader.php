@@ -48,7 +48,7 @@ $countryCodeVisitor= ip_info("Visitor", "Country Code");
 
 <li id="menu-item-166" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-166"><a href="./t-php/t-menu/byCalendar.php?lang=<?php echo $lang?>"><?php echo $lang_arr['byCalendar']?></a></li>
 
-<li id="menu-item-237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237"><a href="./t-php/t-menu/faq/"><?php echo $lang_arr['happenThisDay']?></a></li>
+<li id="menu-item-237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237"><a href="./t-php/t-menu/happenThisDay.php?lang=<?php echo $lang?>"><?php echo $lang_arr['happenThisDay']?></a></li>
 
 <li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168"><a href="./t-php/t-menu/allVac.php?lang=<?php echo $lang?>"><?php echo $lang_arr['allVac']?></a></li>
 

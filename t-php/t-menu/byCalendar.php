@@ -4,7 +4,7 @@
 	
 <?php
 $isMain = "0";
-
+$pageNbr = "3";
 //mfi
 include "../../t-include/common.php";
 include "../../t-include/common-style.php";
@@ -52,7 +52,7 @@ $imageDim = "";
 <body class="home page-template-default page page-id-156 custom-background fl-builder custom-header-image layout-one-column-wide">
 <div id="page" class="hfeed site">
 	
-	<?php include '../t-data/header.php?pageNbr=3';?>
+	<?php include '../t-data/header.php';?>
 
 		
 <div class="hero">

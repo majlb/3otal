@@ -4,7 +4,7 @@
 	
 <?php
 $isMain = "0";
-
+$pageNbr = "5";
 //mfi
 include "../../t-include/common.php";
 include "../../t-include/common-style.php";
@@ -54,7 +54,7 @@ $imageDim = "";
 	
 
 		
-	<?php include '../t-data/header.php?pageNbr=5';?>
+	<?php include '../t-data/header.php';?>
 
 		
 <div class="hero">

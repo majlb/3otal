@@ -1,7 +1,7 @@
 <?php
 include ('../t-data/IpInfo.php');
 $countryCodeVisitor= ip_info("Visitor", "Country Code");
-$pageNbr = $_REQUEST["pageNbr"];
+
 
 ?>
 
@@ -47,7 +47,7 @@ $pageNbr = $_REQUEST["pageNbr"];
 
 <div class="menu-primary-menu-container">
 	<ul id="menu-primary-menu" class="menu">
-	  <?php if($pageNbr = "1") {?>
+	  <?php if($pageNbr == "1") {?>
 		<li id="menu-item-170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-156 current_page_item menu-item-170">
 		<?php } else {?>
 			<li id="menu-item-170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home">
@@ -55,7 +55,7 @@ $pageNbr = $_REQUEST["pageNbr"];
 		
 		<a href="../../index.php?lang=<?php echo $lang?>" aria-current="page"><?php echo $lang_arr['HomePage']?></a></li>
 
-		<?php if($pageNbr = "2") {?>
+		<?php if($pageNbr == "2") {?>
 		<li id="menu-item-169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169 current-menu-item page_item page-item-169 current_page_item menu-item-169">
 			<?php } else {?>
 			<li id="menu-item-169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169">
@@ -63,7 +63,7 @@ $pageNbr = $_REQUEST["pageNbr"];
 		
 		
 		<a href="byMap.php?lang=<?php echo $lang?>"><?php echo $lang_arr['byMap']?></a></li>
-	  <?php if($pageNbr = "3") {?>
+	  <?php if($pageNbr == "3") {?>
 		<li id="menu-item-166" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-166 current-menu-item page_item page-item-166 current_page_item menu-item-166">
 		<?php } else {?>
 			<li id="menu-item-166" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-166">
@@ -71,14 +71,14 @@ $pageNbr = $_REQUEST["pageNbr"];
 		<a href="byCalendar.php?lang=<?php echo $lang?>"><?php echo $lang_arr['byCalendar']?></a></li>
 		
 		
-		  <?php if($pageNbr = "4") {?>
+		  <?php if($pageNbr == "4") {?>
 		<li id="menu-item-237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237 current-menu-item page_item page-item-237 current_page_item menu-item-237">
 		<?php } else {?>
 			<li id="menu-item-237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237">
 		<?php } ?>
 		<a href="happenThisDay.php?lang=<?php echo $lang?>"><?php echo $lang_arr['happenThisDay']?></a></li>
 		
-		<?php if($pageNbr = "5") {?>
+		<?php if($pageNbr == "5") {?>
 			<li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168 current-menu-item page_item page-item-168 current_page_item menu-item-168">
 		<?php } else {?>
 			<li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168">
@@ -86,28 +86,28 @@ $pageNbr = $_REQUEST["pageNbr"];
 		<a href="allVac.php?lang=<?php echo $lang?>"><?php echo $lang_arr['allVac']?></a></li>
 		
 		
-			<?php if($pageNbr = "6") {?>
+			<?php if($pageNbr == "6") {?>
 			<li id="menu-item-174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-174 current-menu-item page_item page-item-174 current_page_item menu-item-174">
 		<?php } else {?>
 			<li id="menu-item-174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-174">
 		<?php } ?>
 		<a href="weekend.php?lang=<?php echo $lang?>"><?php echo $lang_arr['weekEnd']?></a></li>
 		
-			<?php if($pageNbr = "7") {?>
+			<?php if($pageNbr == "7") {?>
 			<li id="menu-item-173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-173 current-menu-item page_item page-item-173 current_page_item menu-item-173">
 		<?php } else {?>
 			<li id="menu-item-173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-173">
 		<?php } ?>
 		<a href="showCities.php?lang=<?php echo $lang?>"><?php echo $lang_arr['showCities']?></a></li>
 		
-		<?php if($pageNbr = "8") {?>
+		<?php if($pageNbr == "8") {?>
 			<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171 current-menu-item page_item page-item-171 current_page_item menu-item-171">
 		<?php } else {?>
 			<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171">
 		<?php } ?>
 		<a href="contactUs.php?lang=<?php echo $lang?>"><?php echo $lang_arr['contactUs']?></a></li>
 		
-			<?php if($pageNbr = "9") {?>
+			<?php if($pageNbr == "9") {?>
 			<li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172 current-menu-item page_item page-item-172 current_page_item menu-item-172">
 		<?php } else {?>
 			<li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172">

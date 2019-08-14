@@ -4,6 +4,7 @@
 	
 <?php
 $isMain = "0";
+$pageNbr = "6";
 //mfi
 include "../../t-include/common.php";
 include "../../t-include/common-style.php";

@@ -4,7 +4,7 @@
 	
 <?php
 $isMain = "0";
-
+$pageNbr = "2";
 //mfi
 include "../../t-include/common.php";
 include "../../t-include/common-style.php";
@@ -67,7 +67,7 @@ $imageDim = "";
 	
 <a class="skip-link screen-reader-text" href="http://www.3otal.com">---</a>
 		
-	<?php include '../t-data/header.php?pageNbr=2';?>
+	<?php include '../t-data/header.php';?>
 
 		
 <div class="hero">
@@ -82,7 +82,7 @@ $imageDim = "";
 			
 				<p><?php echo $lang_arr['checkArabVacations']?></p>
 
-			
+			<p>555555555555555</p>
 			
 				<p></p>
 
