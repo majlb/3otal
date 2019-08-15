@@ -81,8 +81,6 @@ $imageDim = "";
 			
 			
 				<p><?php echo $lang_arr['checkArabVacations']?></p>
-
-			<p>555555555555555</p>
 			
 				<p></p>
 

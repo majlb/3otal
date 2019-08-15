@@ -25,9 +25,8 @@ $countryCodeVisitor= ip_info("Visitor", "Country Code");
 <div class="site-title-wrapper">
 
 <div> 
-<?php echo $pageNbr?>
-<button id='AR' class="button" onclick ="changeLanguage('AR')">AR1</button>
-<button id='EN' class="button" onclick ="changeLanguage('EN')">EN1</button>
+<button id='AR' class="button" onclick ="changeLanguage('AR')">AR</button>
+<button id='EN' class="button" onclick ="changeLanguage('EN')">EN</button>
 </div>					
 	
 	<h1><img src="../../img/logo/logo.png" class="w3-circle w3-margin-right" style="width:80px"></h1>
